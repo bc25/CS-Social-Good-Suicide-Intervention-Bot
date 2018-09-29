@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sentree</title>
+<script src="https://apis.google.com/js/platform.js"></script>
+	
+<!-- Automatically redirect if not logged in -->
+<script>
+	gapi.load('auth2', function() {
+		gapi.auth2.init({
+			client_id: '493201373878-c1kd10drtpt3l1aspfttc48uousbj0jq.apps.googleusercontent.com',
+			hosted_domain: 'stanford.edu',
+		}).then(function(){
+			auth2 = gapi.auth2.getAuthInstance();
+			if (!auth2.isSignedIn.get())
+				window.location.href = '/login.html';
+            else
+                window.location.href = '/interventions.html';
+		});
+	});
+</script>
+</head>
+<body>
+</body>
+</html>
