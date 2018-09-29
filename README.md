@@ -8,6 +8,8 @@ This repo houses supporting code for a bot which parses online web forumns for s
 - [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/)
 
 ## Command to Run Bot
+Note: Code is for viewing only, as playground url is now deprecated and actual website user information is private.
+
 ```python trevorbot.py```
 
 Optional argument: ```flagged_words.txt``` adds phrases from file (where each line is a phrase) to keyword database.
